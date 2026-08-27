@@ -1,0 +1,12 @@
+                 URL      ->   [https://overthewire.org/wargames/bandit/bandit2.html]
+
+  The password for the next level is stored in a file called - located in the home directory
+
+In Linux and Unix systems, a dashed filename refers to a file or directory whose name starts with a dash (-)
+or double dash (--).Because command-line utilities use the dash (-) character to flag options and arguments 
+(e.g., rm -r), a file named -filename or simply - will break standard commands. 
+The shell misinterprets the filename as a command option, leading to errors or unexpected behavior
+
+Using plain cat -file will fail because cat tries to read an option named -f
+
+solution -> Explicit Path: Use a relative path prefix like ./ so the command sees the path instead of a leading dash.

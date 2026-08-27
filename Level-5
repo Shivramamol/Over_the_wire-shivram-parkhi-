@@ -1,0 +1,17 @@
+Bandit Level 4 → Level 5
+Level Goal
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
+used cd command to enter into the inhere directory and then used
+file command to listall the files present.
+
+found the flag in the 7th file.
+
+bandit4@bandit:~$ cd inhere
+bandit4@bandit:~/inhere$ cat ./-file07
+6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
+bandit4@bandit:~/inhere$ 
+
+
+Commands you may need to solve this level
+ls , cd , cat , file , du , find

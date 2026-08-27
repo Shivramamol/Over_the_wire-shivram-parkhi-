@@ -19,7 +19,7 @@ bandit3@bandit:~$ find
 ./.bashrc
 
 
-
+*****The FIND command in Linux is used to search for files and directories.***
 
 Commands you may need to solve this level
 ls , cd , cat , file , du , find

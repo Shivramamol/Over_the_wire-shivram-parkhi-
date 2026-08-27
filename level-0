@@ -1,0 +1,6 @@
+                URL of challange [https://overthewire.org/wargames/bandit/bandit0.html]
+
+1.In this file , there is the solution for the level-0 of the overthewire [bandit]
+2.intially we have to log into the overthewire thorugh our kali kinux terminal using ssh
+3.command -> ssh bandit0@bandit.labs.overthewire.org -p 2200
+4.That's the only thing to do in the leve-0 , now let's move to next level

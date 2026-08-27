@@ -1,0 +1,25 @@
+Level Goal
+The password for the next level is stored in a hidden file in the inhere directory.
+
+
+Solution -> bandit3@bandit:~$ cat ./inhere/...Hiding-From-You
+
+intially we got only the inhere directory.
+inside that direcory we found the imp file[hiding for you]
+
+
+imp [cat inhere/...Hiding-From-You]
+
+bandit3@bandit:~$ find
+.
+./inhere
+./inhere/...Hiding-From-You
+./.bash_logout
+./.profile
+./.bashrc
+
+
+
+
+Commands you may need to solve this level
+ls , cd , cat , file , du , find

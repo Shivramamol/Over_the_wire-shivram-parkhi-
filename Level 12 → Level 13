@@ -8,5 +8,38 @@ In computing, a hex dump is a textual hexadecimal view (on screen or paper) of c
 
 In a hex dump, each byte (8 bits) is represented as a two-digit hexadecimal number. Hex dumps are commonly organized into rows of 8 or 16 bytes, sometimes separated by whitespaces. Some hex dumps have the hexadecimal memory address at the beginning. On systems where the conventional representation of data is octal, the equivalent is an octal dump.
 
+Commands executed:[Credits:Ishaan-Jog/Linux-commands-OverTheWire/blob/main/level12-13]
+mkdir /tmp/bandit_lv12
+cd /tmp/bandit_lv2
+cp ~/data.txt .
+xxd -r data.txt > data.bin
+file data.bin  # gzip output
+mv data.bin data.gz
+gunzip data.gz  # output file: data
+file data  # bzip2 output
+bunzip2 data
+file data.out  # gzip output
+mv data.out data.gz
+gunzip data.gz
+file data  # POSIX tar archive output
+tar -xf data  # output file: data5.bin
+file data5.bin  # POSIX tar archive
+tar -xf data5.bin  # output: data6.bin
+file data6.bin  # bzip2 file
+bunzip2 data6.bin  # output: data6.bin.out
+file data6.bin.out  # POSIX tar archive
+tar -xf data6.bin.out  # output: data8.bin
+file data8.bin  # gzip file
+mv data8.bin data8.gz
+gunzip data8.gz  # output: data8
+file data8  # ASCII text
+cat data8  # get password
+
+
+
+
+Found this level little harder then before.
+
+
 Commands you may need to solve this level
 grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd, mkdir, cp, mv, file
